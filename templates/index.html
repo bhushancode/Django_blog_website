@@ -1,0 +1,391 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-dark bg-info  py-2">
+    <div class="container">
+      <a class="navbar-brand mr-lg-5" href="#">
+        <img src="static/assets/img/logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar_global">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="#">
+                <img src="static/assets/logo.png">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+          
+            
+          
+          <li class="nav-item dropdown">
+            <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+              <i class="ni ni-single-copy-04 d-lg-none"></i>
+              <span class="nav-link-inner--text">Categories</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-tie-bow text-warning"></i>
+                College Memories
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-align-center text-info"></i>
+                Business Journey
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-chart-bar-32 text-yellow"></i>
+                Life Experience
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-square-pin text-danger"></i>
+                Sucess Story
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-planet text-purple"></i>
+                Entrepreneurship
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-money-coins text-success"></i>
+                Technologies
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-box-2 text-pink"></i>
+                After College
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-bag-17 text-primary"></i>
+                Alumns company
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-bag-17 text-primary"></i>
+                Failure
+              </a>
+              <a class="dropdown-item" href="./blog">
+                <i class="ni ni-circle-08 text-info"></i>
+                Alumns Giveaway
+              </a>
+              
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+              <i class="ni ni-tablet-button d-lg-none"></i>
+              <span class="nav-link-inner--text">Account</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="account-settings.html">
+                <i class="ni ni-lock-circle-open text-muted"></i>
+                Profile Settings
+              </a>
+              <a class="dropdown-item" href="login-page.html">
+                <i class="ni ni-tv-2 text-danger"></i>
+                Write a Blog
+              </a>
+              <a class="dropdown-item" href="register-page.html">
+                <i class="ni ni-air-baloon text-pink"></i>
+                Your Blogs
+              </a>
+              <a class="dropdown-item" href="reset-page.html">
+                <i class="ni ni-atom text-info"></i>
+                Saved Blogs
+              </a>
+              <a class="dropdown-item" href="invoice-page.html">
+                <i class="ni ni-bullet-list-67 text-success"></i>
+                Reset Password
+              </a>
+              
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="https://alumni.iitbhu.ac.in/" class="btn btn-outline-white" target="_blank">
+              <i class="ni ni-laptop d-lg-none"></i>
+              <span class="nav-link-inner--text">VISIT SAIC WEBSITE</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./login" class="btn btn-white" target="_blank">
+              <i class="ni ni-basket d-lg-none"></i>
+              <span class="nav-link-inner--text">LOGIN/SIGNUP</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="wrapper" style="background-color: #24cae8;">
+  <div class="page-header header-video">
+    <div class="overlay"></div>
+    
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <h1 class="video-text">Alumns Diary</h1>
+          <h1 class="display-3 text-white">Let's read it!</h1>
+          <a href="#" class="btn btn-warning btn-icon mt-3 mb-sm-0">
+            <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+            <span class="btn-inner--text">Subscribe Newsletter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div> 
+{% endblock nav %}
+
+
+
+{% block blogs %}
+<div class="container">
+<div class="row justify-content-center mt-5">
+    <div class="col-lg-12">
+      <div class="row row-grid">
+        <div class="col-lg-4">
+          <div class="card card-lift--hover shadow border-0">
+            <div class="card-body py-5">
+              <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                <i class="ni ni-check-bold"></i>
+              </div>
+              <h6 class="text-primary text-uppercase">Download Argon</h6>
+              <p class="description mt-3">Because I’m here to follow my dreams and inspire other people to follow their dreams, too. That’s what I’m here for. </p>
+              <a href="#" class="btn btn-primary mt-4">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-lift--hover shadow border-0">
+            <div class="card-body py-5">
+              <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                <i class="ni ni-istanbul"></i>
+              </div>
+              <h6 class="text-success text-uppercase">Build Something</h6>
+              <p class="description mt-3">Society has put up so many boundaries, so many limitations on what’s right and wrong that it’s almost impossible.</p>
+              <a href="#" class="btn btn-success mt-4">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-lift--hover shadow border-0">
+            <div class="card-body py-5">
+              <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                <i class="ni ni-planet"></i>
+              </div>
+              <h6 class="text-warning text-uppercase">Prepare Launch</h6>
+              <p class="description mt-3">Why would anyone pick blue over pink? Pink is obviously a better color.Everyone’s born confident, and everything’s...</p>
+              <a href="#" class="btn btn-warning mt-4">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-12">
+      <div class="row row-grid">
+        <div class="col-lg-4">
+          <div class="card card-lift--hover shadow border-0">
+            <div class="card-body py-5">
+              <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                <i class="ni ni-check-bold"></i>
+              </div>
+              <h6 class="text-primary text-uppercase">Download Argon</h6>
+              <p class="description mt-3">Because I’m here to follow my dreams and inspire other people to follow their dreams, too. That’s what I’m here for. </p>
+              <a href="#" class="btn btn-primary mt-4">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-lift--hover shadow border-0">
+            <div class="card-body py-5">
+              <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                <i class="ni ni-istanbul"></i>
+              </div>
+              <h6 class="text-success text-uppercase">Build Something</h6>
+              <p class="description mt-3">Society has put up so many boundaries, so many limitations on what’s right and wrong that it’s almost impossible.</p>
+              <a href="#" class="btn btn-success mt-4">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-lift--hover shadow border-0">
+            <div class="card-body py-5">
+              <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                <i class="ni ni-planet"></i>
+              </div>
+              <h6 class="text-warning text-uppercase">Prepare Launch</h6>
+              <p class="description mt-3">Why would anyone pick blue over pink? Pink is obviously a better color.Everyone’s born confident, and everything’s...</p>
+              <a href="#" class="btn btn-warning mt-4">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!--end container blog-->
+{% endblock blogs %}
+
+
+
+
+{% block week %}
+<div class="team-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center mb-5">
+          <h3 class="display-3">Meet contributors of week!</h3>
+          <p class="lead">Let's meet top contributors of this alumni blog! We appreciate their love for alma matter.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-profile">
+            <div class="card-header bg-info" style="background-image: url('static/assets/img/ill/inn.svg')">
+              <div class="card-avatar">
+                <a href="javascript:;">
+                  <img class="img img-raised rounded-circle" src="static/assets/img/faces/team-2.jpg">
+                </a>
+              </div>
+            </div>
+            <div class="card-body pt-0">
+              <div class="d-flex justify-content-between">
+                <a href="javascript:;" class="btn btn-sm btn-info mr-4 mt-3">Profile</a>
+                <a href="javascript:;" class="btn btn-sm btn-default float-right mt-3">Follow</a>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-profile-stats d-flex justify-content-center">
+                    <div>
+                      <span class="heading">22</span>
+                      <span class="description">Wrote</span>
+                    </div>
+                    <div>
+                      <span class="heading">10</span>
+                      <span class="description">Read</span>
+                    </div>
+                    <div>
+                      <span class="heading">89</span>
+                      <span class="description">Comments</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h5 class="h4">
+                  Aishwarya <span class="font-weight-light">, 2006</span>
+                </h5>
+                <div class="font-weight-300">
+                  <i class="ni location_pin mr-2"></i>Mumbai, India
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-profile" data-background="cover">
+            <img class="img pattern pattern-top" src="static/assets/img/ill/linth3.svg" alt="cover">
+            <div class="card-header">
+              <div class="card-avatar">
+                <a href="javascript:;">
+                  <img class="img img-raised rounded-circle" src="static/assets/img/faces/michael.jpg">
+                </a>
+              </div>
+            </div>
+
+            <div class="card-body pt-0">
+                <div class="d-flex justify-content-between">
+                  <a href="javascript:;" class="btn btn-sm btn-info mr-4 mt-3">Profile</a>
+                  <a href="javascript:;" class="btn btn-sm btn-default float-right mt-3">Follow</a>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="card-profile-stats d-flex justify-content-center">
+                      <div>
+                        <span class="heading">22</span>
+                        <span class="description">Wrote</span>
+                      </div>
+                      <div>
+                        <span class="heading">10</span>
+                        <span class="description">Read</span>
+                      </div>
+                      <div>
+                        <span class="heading">89</span>
+                        <span class="description">Comments</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h5 class="h4">
+                    Bhushan <span class="font-weight-light">, 2001</span>
+                  </h5>
+                  <div class="font-weight-300">
+                    <i class="ni location_pin mr-2"></i>Silicon, US
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-profile">
+            <div class="card-header bg-info" style="background-image: url('static/assets/img/ill/inn.svg')">
+              <div class="card-avatar">
+                <a href="javascript:;">
+                  <img class="img img-raised rounded-circle" src="static/assets/img/faces/team-3.jpg">
+                </a>
+              </div>
+            </div>
+            
+            <div class="card-body pt-0">
+              <div class="d-flex justify-content-between">
+                <a href="javascript:;" class="btn btn-sm btn-info mr-4 mt-3">Profile</a>
+                <a href="javascript:;" class="btn btn-sm btn-default float-right mt-3">Follow</a>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-profile-stats d-flex justify-content-center">
+                    <div>
+                      <span class="heading">10</span>
+                      <span class="description">Wrote</span>
+                    </div>
+                    <div>
+                      <span class="heading">22</span>
+                      <span class="description">Read</span>
+                    </div>
+                    <div>
+                      <span class="heading">69</span>
+                      <span class="description">Comments</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h5 class="h4">
+                  Johana Doe<span class="font-weight-light">, 1994</span>
+                </h5>
+                <div class="font-weight-300">
+                  <i class="ni location_pin mr-2"></i>California, US
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock week %}
